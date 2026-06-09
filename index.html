@@ -6,15 +6,15 @@
     <title>Happiest Birthday to my Little Sister 💖</title>
     <style>
         :root {
-            --bg-cream: #fff8ee;
-            --silk-purple: #3a106d;
-            --silk-neon: #9d4edd;
-            --cadbury-blue: #0c2340;
-            --oreo-black: #1c1c1c;
+            --bg-cream: #eef8ff;
+            --silk-purple: #1a4968;
+            --silk-neon: #64b5f6;
+            --cadbury-blue: #0d47a1;
+            --oreo-black: #112233;
             --oreo-cream: #ffffff;
-            --silk-gold: #ffb703;
-            --chocolate-melt: #2b1105;
-            --glow-color: rgba(157, 78, 221, 0.15);
+            --silk-gold: #b3e5fc;
+            --chocolate-melt: #0f2a4a;
+            --glow-color: rgba(100, 181, 246, 0.2);
         }
 
         * {
@@ -41,13 +41,13 @@
             z-index: 5;
         }
 
-        /* --- RAINBOW SHIFTING TEXT --- */
+        /* --- RAINBOW LIGHT BLUE SHIFTING TEXT --- */
         header h1 {
             font-size: 2.8rem;
             text-transform: uppercase;
             letter-spacing: 1px;
             margin-bottom: 10px;
-            background: linear-gradient(45deg, #7b2cbf, #ff007f, #ffb703, #00f5d4, #7b2cbf);
+            background: linear-gradient(45deg, #0288d1, #4fc3f7, #b3e5fc, #00e5ff, #0288d1);
             background-size: 400% 400%;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -60,12 +60,12 @@
             font-style: italic;
             font-size: 1.2rem;
             margin-bottom: 20px;
-            color: #533e65;
+            color: #3b5c78;
         }
 
         /* --- SCOREBOARD QUEST BAR --- */
         .quest-board {
-            background: linear-gradient(135deg, #ff007f, var(--silk-purple));
+            background: linear-gradient(135deg, #4fc3f7, var(--silk-purple));
             color: white;
             padding: 15px 25px;
             border-radius: 50px;
@@ -73,7 +73,7 @@
             align-items: center;
             gap: 20px;
             margin-bottom: 25px;
-            box-shadow: 0 8px 25px rgba(255, 0, 127, 0.3);
+            box-shadow: 0 8px 25px rgba(79, 195, 247, 0.3);
             border: 3px solid var(--silk-gold);
             animation: pulseGlow 2s infinite alternate;
         }
@@ -82,8 +82,8 @@
             background: var(--oreo-black);
             padding: 5px 20px;
             border-radius: 30px;
-            color: #00f5d4;
-            text-shadow: 0 0 10px rgba(0, 245, 212, 0.5);
+            color: #00e5ff;
+            text-shadow: 0 0 10px rgba(0, 229, 255, 0.5);
         }
         .quest-hint {
             font-family: sans-serif;
@@ -105,14 +105,14 @@
             padding: 15px 10px;
             border-radius: 14px;
             min-width: 95px;
-            box-shadow: 0 10px 25px rgba(58, 16, 109, 0.08);
-            border: 2px solid rgba(58, 16, 109, 0.06);
+            box-shadow: 0 10px 25px rgba(26, 73, 104, 0.08);
+            border: 2px solid rgba(26, 73, 104, 0.06);
             transition: all 0.5s ease;
         }
         .time-box:hover {
             transform: translateY(-5px) scale(1.05);
-            border-color: #ff007f;
-            box-shadow: 0 10px 20px rgba(255, 0, 127, 0.2);
+            border-color: #4fc3f7;
+            box-shadow: 0 10px 20px rgba(79, 195, 247, 0.2);
         }
 
         .number {
@@ -125,7 +125,7 @@
         .label {
             font-size: 0.75rem;
             text-transform: uppercase;
-            color: #7b6d8d;
+            color: #55758f;
             margin-top: 5px;
             display: block;
             font-family: sans-serif;
@@ -150,7 +150,7 @@
             background: rgba(255, 255, 255, 0.85);
             padding: 35px 20px;
             border-radius: 24px;
-            box-shadow: 0 15px 35px rgba(58,16,109,0.05);
+            box-shadow: 0 15px 35px rgba(26,73,104,0.05);
             border: 3px solid var(--oreo-cream);
             display: flex;
             flex-direction: column;
@@ -159,7 +159,7 @@
         }
 
         .mic-btn {
-            background: linear-gradient(135deg, #ff007f, var(--silk-neon));
+            background: linear-gradient(135deg, #0288d1, var(--silk-neon));
             color: var(--oreo-cream);
             border: none;
             padding: 12px 24px;
@@ -167,12 +167,12 @@
             font-size: 0.9rem;
             text-transform: uppercase;
             cursor: pointer;
-            box-shadow: 0 6px 20px rgba(255, 0, 127, 0.3);
+            box-shadow: 0 6px 20px rgba(2, 136, 209, 0.3);
             margin-bottom: 25px;
             transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             z-index: 15;
         }
-        .mic-btn:hover { transform: scale(1.08); background: linear-gradient(135deg, var(--silk-neon), #00f5d4); }
+        .mic-btn:hover { transform: scale(1.08); background: linear-gradient(135deg, var(--silk-neon), #00e5ff); }
 
         .cake-display {
             width: 300px;
@@ -188,7 +188,7 @@
         .cake-stand {
             width: 240px;
             height: 16px;
-            background: linear-gradient(to bottom, #fcf3e3, var(--silk-gold));
+            background: linear-gradient(to bottom, #e1f5fe, var(--silk-gold));
             border-radius: 50%;
             position: absolute;
             bottom: 10px;
@@ -224,23 +224,23 @@
 
         .tier-bottom {
             width: 220px; height: 90px;
-            background: repeating-linear-gradient(90deg, #3a106d, #3a106d 12px, #5a189a 13px, #5a189a 16px);
+            background: repeating-linear-gradient(90deg, #1a4968, #1a4968 12px, #29b6f6, #29b6f6 16px);
             border-radius: 0 0 50% 50% / 0 0 24px 24px; position: absolute; bottom: 0; left: 0;
             box-shadow: 0 8px 12px rgba(0,0,0,0.2);
         }
         .tier-bottom::before {
             content: ''; position: absolute; top: -15px; left: 0; width: 100%; height: 30px;
-            background: radial-gradient(circle at center, #7b2cbf, #3a106d); border-radius: 50%;
+            background: radial-gradient(circle at center, #4fc3f7, #1a4968); border-radius: 50%;
         }
 
         .tier-top {
             width: 150px; height: 70px;
-            background: linear-gradient(135deg, #ff0055, #ff5000);
+            background: linear-gradient(135deg, #00b0ff, #80d8ff);
             border-radius: 0 0 50% 50% / 0 0 18px 18px; position: absolute; bottom: 75px; left: 35px;
         }
         .tier-top::before {
             content: ''; position: absolute; top: -12px; left: 0; width: 100%; height: 24px;
-            background: radial-gradient(circle at center, #ff758c, #ff0055); border-radius: 50%;
+            background: radial-gradient(circle at center, #e1f5fe, #00b0ff); border-radius: 50%;
         }
 
         .cream-drips {
@@ -254,36 +254,36 @@
         }
         .strawberry {
             width: 26px; height: 26px; 
-            background: radial-gradient(circle at 30% 30%, #ff6b6b, #ee5253);
+            background: radial-gradient(circle at 30% 30%, #4fc3f7, #0288d1);
             border: 2px solid var(--oreo-cream);
             border-radius: 50%; cursor: pointer; position: relative;
             box-shadow: 0 4px 6px rgba(0,0,0,0.3); transition: transform 0.2s;
         }
-        .strawberry:hover { transform: scale(1.35) rotate(15deg); filter: drop-shadow(0 0 8px #ff6b6b); }
-        .strawberry::after { content: '🍓'; font-size: 14px; position: absolute; top: -7px; left: 4px; }
+        .strawberry:hover { transform: scale(1.35) rotate(15deg); filter: drop-shadow(0 0 8px #4fc3f7); }
+        .strawberry::after { content: '🩵'; font-size: 14px; position: absolute; top: -5px; left: 4px; }
         .strawberry.popped { display: none; }
 
         /* Candle Styling */
         .candle {
             width: 8px; height: 55px;
-            background: linear-gradient(to right, #00f5d4, #00bbf9, #00f5d4);
+            background: linear-gradient(to right, #00e5ff, #80d8ff, #00e5ff);
             position: absolute; bottom: 145px; left: 50%; transform: translateX(-50%);
             border-radius: 3px; z-index: 5; transition: opacity 0.5s;
         }
 
         .flame {
             width: 16px; height: 26px;
-            background: linear-gradient(to bottom, #ffffff 0%, #ffb703 40%, #ff0055 100%);
+            background: linear-gradient(to bottom, #ffffff 0%, #b3e5fc 40%, #0288d1 100%);
             border-radius: 50% 50% 20% 20% / 60% 60% 40% 40%;
             position: absolute; top: -24px; left: -4px;
-            box-shadow: 0 0 25px #ffb703, 0 0 10px #ff0055;
+            box-shadow: 0 0 25px #b3e5fc, 0 0 10px #0288d1;
             animation: flicker 0.1s infinite alternate; transform-origin: bottom center;
         }
         .flame.out { display: none !important; }
 
         .smoke {
             display: none; position: absolute; top: -25px; left: 2px; width: 4px; height: 20px;
-            background: rgba(220,220,220,0.6); border-radius: 50%; filter: blur(2px);
+            background: rgba(200,230,255,0.6); border-radius: 50%; filter: blur(2px);
         }
         .smoke.active { animation: floatUp 2s forwards; display: block; }
 
@@ -295,22 +295,22 @@
         }
         .cake-knife.ready { display: block; }
 
-        /* --- NEON SURPRISE BOXES --- */
+        /* --- SURPRISE BOXES --- */
         .gifts-grid { display: flex; flex-direction: column; gap: 40px; justify-content: center; align-items: center; }
         .gift-wrapper { display: flex; flex-direction: column; align-items: center; position: relative; }
         .gift-container { width: 140px; height: 140px; position: relative; cursor: pointer; perspective: 600px; }
         
         .gift-box { 
             width: 100%; height: 100%; 
-            background: linear-gradient(135deg, #00bbf9, #00f5d4); 
+            background: linear-gradient(135deg, #0288d1, #00e5ff); 
             position: absolute; bottom: 0; border-radius: 12px; 
-            box-shadow: 0 10px 25px rgba(0, 245, 212, 0.2); 
+            box-shadow: 0 10px 25px rgba(0, 229, 255, 0.2); 
         }
-        .gift-box::before { content: ''; position: absolute; background: #ff007f; top: 0; left: 50%; width: 22px; height: 100%; transform: translateX(-50%); }
-        .gift-box::after { content: ''; position: absolute; background: #ff007f; top: 50%; left: 0; width: 100%; height: 22px; transform: translateY(-50%); }
+        .gift-box::before { content: ''; position: absolute; background: #b3e5fc; top: 0; left: 50%; width: 22px; height: 100%; transform: translateX(-50%); }
+        .gift-box::after { content: ''; position: absolute; background: #b3e5fc; top: 50%; left: 0; width: 100%; height: 22px; transform: translateY(-50%); }
         
         .gift-lid {
-            width: 108%; height: 28px; background: #0096c7; position: absolute; top: -6px; left: -4%;
+            width: 108%; height: 28px; background: #0091ea; position: absolute; top: -6px; left: -4%;
             border-radius: 6px; z-index: 2; transform-origin: bottom left; transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             box-shadow: 0 4px 5px rgba(0,0,0,0.1);
         }
@@ -327,13 +327,13 @@
 
         /* --- MULTI-COLORED OREO FOUNTAIN --- */
         .fountain-kitkat {
-            position: absolute; width: 46px; height: 46px; background: #1c1c1c; color: #fff;
+            position: absolute; width: 46px; height: 46px; background: #112233; color: #fff;
             font-size: 9px; font-weight: bold; display: flex; align-items: center; justify-content: center;
-            border: 4px double var(--fountain-color, #ff007f); border-radius: 50%; box-shadow: 0 0 12px var(--fountain-color, #ff007f);
+            border: 4px double var(--fountain-color, #4fc3f7); border-radius: 50%; box-shadow: 0 0 12px var(--fountain-color, #4fc3f7);
             pointer-events: none; z-index: 10; font-family: 'Arial Black', sans-serif; text-transform: uppercase;
         }
 
-        /* --- PHOTO GALLERY (COLOR FLIP CARDS) --- */
+        /* --- PHOTO GALLERY --- */
         .gallery-section { margin: 50px 0; }
         .gallery-section h2 { text-transform: uppercase; font-size: 1.6rem; margin-bottom: 25px; color: var(--silk-purple); }
         .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 25px; perspective: 1000px; }
@@ -346,25 +346,25 @@
         .photo-frame {
             position: absolute; width: 100%; height: 100%; backface-visibility: hidden;
             background: var(--oreo-cream); padding: 12px 12px 24px 12px; border-radius: 12px;
-            box-shadow: 0 10px 25px rgba(58,16,109,0.06); border: 2px solid transparent;
+            box-shadow: 0 10px 25px rgba(26,73,104,0.06); border: 2px solid transparent;
             display: flex; flex-direction: column; justify-content: space-between; transition: border-color 0.3s;
         }
-        .photo-card-inner:hover .photo-frame.front { border-color: #ff007f; }
+        .photo-card-inner:hover .photo-frame.front { border-color: #4fc3f7; }
         
         .photo-frame.back {
-            transform: rotateY(180deg); background: linear-gradient(135deg, #ff007f, #9d4edd);
+            transform: rotateY(180deg); background: linear-gradient(135deg, #0288d1, #80d8ff);
             display: flex; align-items: center; justify-content: center; padding: 20px;
-            border: 3px dashed #00f5d4;
+            border: 3px dashed #00e5ff;
         }
         .photo-card-inner.flipped { transform: rotateY(180deg); }
         .photo-frame img { width: 100%; height: 200px; object-fit: cover; border-radius: 8px; }
-        .photo-caption { font-family: 'Georgia', serif; font-style: italic; font-size: 0.9rem; margin-top: 12px; color: #533e65; }
+        .photo-caption { font-family: 'Georgia', serif; font-style: italic; font-size: 0.9rem; margin-top: 12px; color: #3b5c78; }
         .back-secret-msg { font-family: 'Georgia', serif; font-style: italic; font-size: 1.1rem; color: white; font-weight: bold; text-shadow: 1px 1px 4px rgba(0,0,0,0.3); }
 
         /* --- LOCKED BIRTHDAY LETTER --- */
         .letter-box {
             background: var(--oreo-cream); padding: 35px; border-radius: 20px;
-            box-shadow: 0 12px 35px rgba(58,16,109,0.06); border-top: 6px solid var(--silk-purple);
+            box-shadow: 0 12px 35px rgba(26,73,104,0.06); border-top: 6px solid var(--silk-purple);
             text-align: left; margin-top: 40px; position: relative; transition: all 1s ease;
         }
         .letter-box.locked { filter: blur(8px); pointer-events: none; opacity: 0.4; transform: scale(0.98); }
@@ -377,30 +377,30 @@
         .lock-card { background: white; padding: 25px 40px; border-radius: 20px; box-shadow: 0 15px 40px rgba(0,0,0,0.15); border: 3px solid var(--silk-gold); text-align: center; }
 
         .letter-box h3 { color: var(--silk-purple); margin-bottom: 18px; text-transform: uppercase; font-size: 1.4rem; }
-        .letter-box p { font-family: 'Georgia', serif; font-size: 1.15rem; line-height: 1.8; margin-bottom: 15px; color: #3a2a4b; }
+        .letter-box p { font-family: 'Georgia', serif; font-size: 1.15rem; line-height: 1.8; margin-bottom: 15px; color: #1a3c54; }
 
         /* Floating Score text */
         .floating-score {
-            position: absolute; color: #00f5d4; font-size: 1.6rem; font-weight: 900;
-            text-shadow: 0px 0px 8px rgba(0, 245, 212, 0.8), 2px 2px var(--oreo-black); 
+            position: absolute; color: #00e5ff; font-size: 1.6rem; font-weight: 900;
+            text-shadow: 0px 0px 8px rgba(0, 229, 255, 0.8), 2px 2px var(--oreo-black); 
             animation: floatUpText 1s forwards; pointer-events: none; z-index: 99;
         }
 
-        /* --- PARTY ACTIVE STYLING (NEON GLOW DISCO) --- */
+        /* --- PARTY ACTIVE STYLING (NEON GLOW LIGHT BLUE NIGHT) --- */
         body.party-active { 
-            --bg-cream: #120124; 
-            --glow-color: rgba(255, 0, 127, 0.25);
-            background-color: #120124; 
+            --bg-cream: #071624; 
+            --glow-color: rgba(0, 229, 255, 0.25);
+            background-color: #071624; 
             color: var(--oreo-cream); 
         }
-        body.party-active .time-box { background: #240046; border-color: #ff007f; box-shadow: 0 10px 25px rgba(255,0,127,0.2); }
-        body.party-active .number { color: #00f5d4; text-shadow: 0 0 10px #00f5d4; }
-        body.party-active .label { color: #ccb6e6; }
-        body.party-active header p { color: #ebd9ff; }
-        body.party-active .cake-card { background: rgba(36, 0, 70, 0.65); border-color: #9d4edd; box-shadow: 0 15px 40px rgba(157,78,221,0.3); }
+        body.party-active .time-box { background: #0c253d; border-color: #4fc3f7; box-shadow: 0 10px 25px rgba(79,195,247,0.2); }
+        body.party-active .number { color: #00e5ff; text-shadow: 0 0 10px #00e5ff; }
+        body.party-active .label { color: #b3e5fc; }
+        body.party-active header p { color: #e1f5fe; }
+        body.party-active .cake-card { background: rgba(12, 37, 61, 0.65); border-color: #64b5f6; box-shadow: 0 15px 40px rgba(100,181,246,0.3); }
         body.party-active .gift-label { color: var(--oreo-cream); }
         body.party-active .gallery-section h2 { color: var(--oreo-cream); }
-        body.party-active .photo-caption { color: #ebd9ff; }
+        body.party-active .photo-caption { color: #e1f5fe; }
 
         canvas { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; pointer-events: none; z-index: 1; }
         
@@ -411,8 +411,8 @@
             100% { background-position: 0% 50%; }
         }
         @keyframes pulseGlow {
-            0% { box-shadow: 0 8px 25px rgba(255, 0, 127, 0.3); }
-            100% { box-shadow: 0 8px 35px rgba(0, 245, 212, 0.6); border-color: #00f5d4; }
+            0% { box-shadow: 0 8px 25px rgba(79, 195, 247, 0.3); }
+            100% { box-shadow: 0 8px 35px rgba(0, 229, 255, 0.6); border-color: #00e5ff; }
         }
         @keyframes flicker { 0% { transform: scale(1) rotate(-1deg); } 100% { transform: scale(1.06) rotate(1deg) skewX(2deg); } }
         @keyframes floatUp { 0% { transform: translateY(0) scale(1); opacity: 0.6; } 100% { transform: translateY(-40px) scale(1.8); opacity: 0; filter: blur(3px); } }
@@ -437,9 +437,9 @@
     <!-- QUEST LOCK OVERLAY -->
     <div class="lock-overlay" id="questLockOverlay">
         <div class="lock-card">
-            <span style="font-size:3rem; display:block; animation: flicker 0.5s infinite alternative;">🔒</span>
-            <h4 style="margin:10px 0; color: #3a106d;">Letter Locked!</h4>
-            <p style="font-family:sans-serif; font-size:0.9rem; color:#66547a;">Earn 100 Birthday Points to unlock your big brother's letter!</p>
+            <span style="font-size:3rem; display:block; animation: flicker 0.5s infinite alternate;">🔒</span>
+            <h4 style="margin:10px 0; color: #1a4968;">Letter Locked!</h4>
+            <p style="font-family:sans-serif; font-size:0.9rem; color:#40627d;">Earn 100 Birthday Points to unlock your big brother's letter!</p>
         </div>
     </div>
 
@@ -467,7 +467,7 @@
         <div class="stage">
             <div class="cake-card">
                 <button class="mic-btn" id="micBtn" onclick="initMicrophone()">🎙️ Blow into Microphone</button>
-                <p id="micStatus" style="font-size:0.85rem; font-weight:normal; font-family:sans-serif; color: #7b6d8d;">Or tap the cake or candle to blow it out!</p>
+                <p id="micStatus" style="font-size:0.85rem; font-weight:normal; font-family:sans-serif; color: #55758f;">Or tap the cake or candle to blow it out!</p>
                 
                 <div class="cake-display">
                     <div class="cake-knife" id="cakeKnife" onclick="cutTheCake()">🔪 Tap to Cut</div>
@@ -521,7 +521,7 @@
             </div>
         </div>
 
-        <!-- REWIRED INTERACTIVE FLIP INTERACTION CARDS -->
+        <!-- PHOTO GALLERY -->
         <div class="gallery-section">
             <h2>Best Moments Together (Tap to Flip Cards!) 📸</h2>
             <div class="gallery-grid">
@@ -633,7 +633,7 @@
                 document.getElementById('mainLetterBox').classList.remove('locked');
                 document.getElementById('questLockOverlay').classList.add('hidden');
                 document.getElementById('questStatusText').textContent = "👑 QUEST COMPLETE! Read your letter below!";
-                triggerCelebrationFX();
+                triggerBurstFX();
             }
         }
 
@@ -712,7 +712,7 @@
                 const music = document.getElementById('bgMusic');
                 music.play().catch(e => console.log("Audio deferred"));
                 
-                triggerCelebrationFX();
+                triggerBurstFX();
 
                 setTimeout(() => {
                     if(!cakeIsCut) {
@@ -757,7 +757,7 @@
 
                 const rect = element.getBoundingClientRect();
                 for(let i=0; i<15; i++) {
-                    particles.push(new Particle(rect.left + 12, rect.top + 14, '#ff0055', 'firework'));
+                    particles.push(new Particle(rect.left + 12, rect.top + 14, '#0288d1', 'firework'));
                 }
             }
         }
@@ -842,7 +842,7 @@
         }
 
         function getRandomNeonColor() {
-            const colors = ['#ff007f', '#00f5d4', '#00bbf9', '#ffb703', '#9d4edd', '#ff5000'];
+            const colors = ['#0288d1', '#00e5ff', '#80d8ff', '#4fc3f7', '#0091ea', '#b3e5fc'];
             return colors[Math.floor(Math.random() * colors.length)];
         }
 
@@ -880,6 +880,22 @@
             }
         }
 
+        // --- UNLIMITED FIREWORK ENGINE ---
+        // Automatically shoots random light blue fireworks continuously in the background
+        function spawnAutoFirework() {
+            const startX = Math.random() * canvas.width;
+            const startY = Math.random() * (canvas.height * 0.5) + (canvas.height * 0.1);
+            const fireworkColor = getRandomNeonColor();
+            
+            for (let i = 0; i < 35; i++) {
+                particles.push(new Particle(startX, startY, fireworkColor, 'firework'));
+            }
+            // Continuous scheduling
+            setTimeout(spawnAutoFirework, Math.random() * 1500 + 800);
+        }
+        // Start the engine
+        spawnAutoFirework();
+
         function animate() {
             ctx.clearRect(0, 0, canvas.width, canvas.height);
             particles = particles.filter(p => p.alpha > 0);
@@ -888,7 +904,7 @@
         }
         animate();
 
-        function triggerCelebrationFX() {
+        function triggerBurstFX() {
             for(let i=0; i<120; i++) {
                 setTimeout(() => {
                     particles.push(new Particle(Math.random() * canvas.width, -20, getRandomNeonColor(), 'confetti'));
